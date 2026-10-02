@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mila · Portafolio de Camila Barrantes</title>
+  <meta name="description" content="Portafolio profesional de Camila Barrantes Ugalde, estudiante de Ingeniería de Software en la Universidad CENFOTEC. Ideas convertidas en código.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/marca/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/marca/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/marca/apple-touch-icon.png">
+
+  <!-- fuentes: Poppins (titulos) y Open Sans (parrafos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- iconos: tecnologías (devicon) y redes (font awesome) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==== Menú ======= -->
+  <header class="encabezado">
+    <nav class="nav contenedor" aria-label="Menú principal">
+      <a href="#inicio" class="nav-logo" aria-label="Mila, ir al inicio">
+        <svg viewBox="8 8 236 126" aria-hidden="true">
+          <g class="logo-trazo">
+            <path d="M22 120 V84 a19 19 0 0 1 38 0 V120 M60 84 a19 19 0 0 1 38 0 V120"/>
+            <path d="M120 64 V120"/>
+            <path d="M142 22 V100 a20 20 0 0 0 20 20 H194"/>
+            <path d="M222 92 a28 28 0 1 1 0 -0.01 M222 64 V120"/>
+          </g>
+          <circle class="logo-punto" cx="120" cy="38" r="9"/>
+        </svg>
+      </a>
+
+      <button class="nav-boton" id="nav-boton" type="button" aria-expanded="false" aria-controls="nav-lista">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <span class="sr-only">Menú</span>
+      </button>
+
+      <ul class="nav-lista" id="nav-lista">
+        <li><a href="#inicio" class="nav-enlace activo">Inicio</a></li>
+        <li><a href="#perfil" class="nav-enlace">Perfil</a></li>
+        <li><a href="#valores" class="nav-enlace">Valores</a></li>
+        <li><a href="#habilidades" class="nav-enlace">Habilidades</a></li>
+        <li><a href="#experiencia" class="nav-enlace">Experiencia</a></li>
+        <li><a href="#proyectos" class="nav-enlace">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-enlace">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ====== Portada ==== -->
+    <section class="portada" id="inicio">
+      <div class="contenedor portada-grid">
+
+        <div class="portada-texto">
+          <!-- logotipo vectorial: el punto de la "i" parpadea como un cursor -->
+          <svg class="portada-logo" viewBox="8 8 236 126" role="img" aria-labelledby="logo-titulo">
+            <title id="logo-titulo">Mila</title>
+            <g class="logo-trazo">
+              <path d="M22 120 V84 a19 19 0 0 1 38 0 V120 M60 84 a19 19 0 0 1 38 0 V120"/>
+              <path d="M120 64 V120"/>
+              <path d="M142 22 V100 a20 20 0 0 0 20 20 H194"/>
+              <path d="M222 92 a28 28 0 1 1 0 -0.01 M222 64 V120"/>
+            </g>
+            <circle class="logo-punto parpadeo" cx="120" cy="38" r="9"/>
+          </svg>
+
+          <p class="slogan">Ideas convertidas en <span>código</span></p>
+
+          <h1 class="portada-titulo">Hola, soy <span>Camila Barrantes</span></h1>
+
+          <p class="portada-carrera">
+            Ingeniera de Software. <br>
+            Desarrollo aplicaciones web funcionales y fáciles de usar.
+          </p>
+
+          <div class="botones">
+            <a href="#proyectos" class="boton boton-cta">Proyectos</a>
+            <a href="#contacto" class="boton boton-borde">Contacto</a>
+          </div>
+
+          <p class="terminal" aria-label="Portafolio en construcción">
+            <span class="prompt">&gt;</span> <span id="escritura">portafolio en construcción</span><span class="cursor-texto" aria-hidden="true">_</span>
+          </p>
+        </div>
+
+        <div class="portada-foto">
+          <!-- Espacio para la foto: reemplazar el div .foto-vacia por
+               <img src="assets/img/camila.png" alt="Camila Barrantes Ugalde"> -->
+          <div class="foto-marco">
+            <div class="foto-vacia" aria-hidden="true">
+              <i class="fa-regular fa-user"></i>
+            </div>
+          </div>
+
+          <div class="tarjeta-codigo" aria-hidden="true">
+            <div class="tarjeta-codigo-barra">
+              <span></span><span></span><span></span>
+              <small>camila.js</small>
+            </div>
+<pre><code><span class="c-clave">const</span> camila = {
+  carrera: <span class="c-texto">"Ing. de Software"</span>,
+  stack: [<span class="c-texto">"C#"</span>, <span class="c-texto">"Java"</span>, <span class="c-texto">"Angular"</span>],
+  aprendiendo: <span class="c-valor">true</span>
+};</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==== Franja de herramientas ===== -->
+    <div class="franja" aria-label="Herramientas tecnológicas">
+      <div class="franja-pista">
+        <ul class="franja-lista">
+          <li><i class="devicon-csharp-plain" aria-hidden="true"></i> C#</li>
+          <li><i class="devicon-java-plain" aria-hidden="true"></i> Java</li>
+          <li><i class="devicon-javascript-plain" aria-hidden="true"></i> JavaScript</li>
+          <li><i class="devicon-typescript-plain" aria-hidden="true"></i> TypeScript</li>
+          <li><i class="devicon-angular-plain" aria-hidden="true"></i> Angular</li>
+          <li><i class="devicon-html5-plain" aria-hidden="true"></i> HTML</li>
+          <li><i class="devicon-css3-plain" aria-hidden="true"></i> CSS</li>
+          <li><i class="devicon-git-plain" aria-hidden="true"></i> Git</li>
+          <li><i class="devicon-github-original" aria-hidden="true"></i> GitHub</li>
+          <li><i class="devicon-visualstudio-plain" aria-hidden="true"></i> Visual Studio</li>
+        </ul>
+        <!-- copia para que el movimiento sea continuo -->
+        <ul class="franja-lista" aria-hidden="true">
+          <li><i class="devicon-csharp-plain"></i> C#</li>
+          <li><i class="devicon-java-plain"></i> Java</li>
+          <li><i class="devicon-javascript-plain"></i> JavaScript</li>
+          <li><i class="devicon-typescript-plain"></i> TypeScript</li>
+          <li><i class="devicon-angular-plain"></i> Angular</li>
+          <li><i class="devicon-html5-plain"></i> HTML</li>
+          <li><i class="devicon-css3-plain"></i> CSS</li>
+          <li><i class="devicon-git-plain"></i> Git</li>
+          <li><i class="devicon-github-original"></i> GitHub</li>
+          <li><i class="devicon-visualstudio-plain"></i> Visual Studio</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ==== Perfil ===== -->
+    <section class="seccion" id="perfil">
+      <div class="contenedor perfil-grid">
+
+        <div class="perfil-foto">
+          <!-- segunda foto: reemplazar el div .foto-vacia por una <img> -->
+          <div class="perfil-foto-marco">
+            <div class="foto-vacia" aria-hidden="true">
+              <i class="fa-regular fa-user"></i>
+            </div>
+          </div>
+          <span class="perfil-anillo" aria-hidden="true"></span>
+        </div>
+
+        <div class="perfil-texto">
+          <p class="etiqueta">Perfil</p>
+          <h2 class="seccion-titulo">Programadora en <span>constante aprendizaje</span></h2>
+          <p>
+            Programadora con experiencia en desarrollo y mejora de soluciones de software.
+            Me caracterizo por mi capacidad para adaptarme a nuevas herramientas, resolver
+            problemas y participar en la creación de nuevas funcionalidades.
+          </p>
+          <p>
+            Me considero una persona responsable, comprometida y con muchas ganas de seguir
+            aprendiendo. Me gusta trabajar en equipo, tener buena comunicación y preguntar
+            cuando no conozco algo.
+          </p>
+
+          <ul class="logros">
+            <li class="logro">
+              <strong>2023</strong>
+              <span>Inicio en Ingeniería de Software</span>
+            </li>
+            <li class="logro">
+              <strong>2024</strong>
+              <span>Primer trabajo como programadora</span>
+            </li>
+            <li class="logro">
+              <strong>5</strong>
+              <span>Proyectos en la galería</span>
+            </li>
+          </ul>
+
+          <div class="botones">
+            <a href="#contacto" class="boton boton-cta">Contacto</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==== Misión, visión y valores ===== -->
+    <section class="seccion seccion-alterna" id="valores">
+      <div class="contenedor">
+        <div class="seccion-cabecera centrada">
+          <p class="etiqueta">Misión, visión y valores</p>
+          <h2 class="seccion-titulo">Lo que me guía como profesional</h2>
+        </div>
+
+        <div class="mv-grid">
+          <article class="mv">
+            <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+            <h3>Misión</h3>
+            <p>Desarrollar aplicaciones web funcionales, seguras y fáciles de usar, aplicando buenas prácticas de programación y adaptándome a las tecnologías que requiera cada proyecto, para ayudar a la empresa a mejorar sus procesos y fortalecer su presencia digital.</p>
+          </article>
+          <article class="mv">
+            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+            <h3>Visión</h3>
+            <p>Ser una ingeniera de software reconocida por crear soluciones digitales confiables e innovadoras, que impulsen la transformación digital de la empresa y generen valor a mediano y largo plazo.</p>
+          </article>
+        </div>
+
+        <ul class="valores-grid">
+          <li class="valor">
+            <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+            <h3>Responsabilidad</h3>
+            <p>Cumplo con las tareas y fechas acordadas, y entrego un trabajo revisado y bien hecho.</p>
+          </li>
+          <li class="valor">
+            <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+            <h3>Honestidad</h3>
+            <p>Comunico con claridad el avance real de mi trabajo, los errores y lo que todavía no sé.</p>
+          </li>
+          <li class="valor">
+            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+            <h3>Humildad</h3>
+            <p>Acepto las recomendaciones de mi equipo y pido ayuda cuando la necesito para aprender más rápido.</p>
+          </li>
+          <li class="valor">
+            <i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>
+            <h3>Paciencia</h3>
+            <p>Enfrento los errores y problemas del código con calma, buscando la causa antes de hacer cambios.</p>
+          </li>
+          <li class="valor">
+            <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+            <h3>Respeto</h3>
+            <p>Valoro las ideas y el tiempo de mis compañeros, y escribo código que otras personas puedan entender y mantener.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==== Habilidades ======== -->
+    <section class="seccion" id="habilidades">
+      <div class="contenedor">
+        <div class="seccion-cabecera centrada">
+          <p class="etiqueta">Habilidades</p>
+          <h2 class="seccion-titulo">Tecnologías con las que trabajo</h2>
+          <p>Cada una la he aplicado en proyectos de la carrera o del trabajo.</p>
+        </div>
+
+        <div class="habilidades-grid">
+          <article class="grupo">
+            <h3>Lenguajes</h3>
+            <ul class="chips">
+              <li><i class="devicon-csharp-plain colored" aria-hidden="true"></i> C#</li>
+              <li><i class="devicon-java-plain colored" aria-hidden="true"></i> Java</li>
+              <li><i class="devicon-javascript-plain colored" aria-hidden="true"></i> JavaScript</li>
+              <li><i class="devicon-typescript-plain colored" aria-hidden="true"></i> TypeScript</li>
+            </ul>
+          </article>
+
+          <article class="grupo">
+            <h3>Desarrollo web</h3>
+            <ul class="chips">
+              <li><i class="devicon-html5-plain colored" aria-hidden="true"></i> HTML</li>
+              <li><i class="devicon-css3-plain colored" aria-hidden="true"></i> CSS</li>
+              <li><i class="devicon-angular-plain colored" aria-hidden="true"></i> Angular</li>
+            </ul>
+          </article>
+
+          <article class="grupo">
+            <h3>Herramientas</h3>
+            <ul class="chips">
+              <li><i class="devicon-git-plain colored" aria-hidden="true"></i> Git</li>
+              <li><i class="devicon-github-original" aria-hidden="true"></i> GitHub</li>
+              <li><i class="devicon-visualstudio-plain colored" aria-hidden="true"></i> Visual Studio</li>
+              <li><i class="devicon-vscode-plain colored" aria-hidden="true"></i> VS Code</li>
+            </ul>
+          </article>
+
+          <article class="grupo">
+            <h3>Habilidades blandas</h3>
+            <ul class="chips">
+              <li><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i> Adaptabilidad</li>
+              <li><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i> Resolución de problemas</li>
+              <li><i class="fa-solid fa-people-group" aria-hidden="true"></i> Trabajo en equipo</li>
+              <li><i class="fa-solid fa-comments" aria-hidden="true"></i> Comunicación</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== Experiencia ===== -->
+    <section class="seccion seccion-alterna" id="experiencia">
+      <div class="contenedor">
+        <div class="seccion-cabecera centrada">
+          <p class="etiqueta">Experiencia</p>
+          <h2 class="seccion-titulo">Mi camino en la tecnología</h2>
+          <p>Lo que he ido aprendiendo en el trabajo y en la universidad.</p>
+        </div>
+
+        <ol class="linea">
+          <li class="linea-item">
+            <span class="linea-fecha">Nov 2024 · actualidad</span>
+            <div class="linea-tarjeta">
+              <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+              <div>
+                <h3>Programadora</h3>
+                <p class="linea-lugar">Área de desarrollo de software</p>
+                <p>Desarrollo y mejora de soluciones de software, investigación de nuevas herramientas y participación en la creación de nuevas funcionalidades.</p>
+              </div>
+            </div>
+          </li>
+          <li class="linea-item">
+            <span class="linea-fecha">May 2023 · actualidad</span>
+            <div class="linea-tarjeta">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              <div>
+                <h3>Ingeniería de Software</h3>
+                <p class="linea-lugar">Universidad CENFOTEC</p>
+                <p>Programación, desarrollo web, bases de datos y desarrollo de aplicaciones, aplicados en proyectos universitarios.</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====== Proyectos ======== -->
+    <section class="seccion" id="proyectos">
+      <div class="contenedor">
+        <div class="seccion-cabecera proyectos-cabecera">
+          <div>
+            <p class="etiqueta">Proyectos</p>
+            <h2 class="seccion-titulo">Galería en construcción</h2>
+            <p>Estoy preparando la información de cada proyecto. Muy pronto podrás ver su objetivo, tecnologías y mi participación.</p>
+          </div>
+          <div class="carrusel-controles">
+            <button class="carrusel-flecha" id="anterior" type="button" aria-label="Proyecto anterior">
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button class="carrusel-flecha" id="siguiente" type="button" aria-label="Proyecto siguiente">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="carrusel" id="carrusel" tabindex="0" aria-label="Carrusel de proyectos">
+          <article class="proyecto">
+            <div class="proyecto-imagen"><i class="fa-solid fa-child-reaching" aria-hidden="true"></i></div>
+            <div class="proyecto-cuerpo">
+              <span class="estado">En construcción</span>
+              <h3>FocusKids · Frontend</h3>
+              <p>Parte visual y funcionalidades de la aplicación.</p>
+              <span class="proyecto-flecha" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </article>
+          <article class="proyecto">
+            <div class="proyecto-imagen"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+            <div class="proyecto-cuerpo">
+              <span class="estado">En construcción</span>
+              <h3>FocusKids · Backend</h3>
+              <p>Lógica y servicios que hacen funcionar el proyecto.</p>
+              <span class="proyecto-flecha" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </article>
+          <article class="proyecto">
+            <div class="proyecto-imagen"><i class="fa-solid fa-table-list" aria-hidden="true"></i></div>
+            <div class="proyecto-cuerpo">
+              <span class="estado">En construcción</span>
+              <h3>CRUD · Frontend</h3>
+              <p>Interfaz para crear, consultar, editar y eliminar información.</p>
+              <span class="proyecto-flecha" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </article>
+          <article class="proyecto">
+            <div class="proyecto-imagen"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+            <div class="proyecto-cuerpo">
+              <span class="estado">En construcción</span>
+              <h3>CRUD · Backend</h3>
+              <p>Operaciones y manejo de datos del sistema.</p>
+              <span class="proyecto-flecha" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </article>
+          <article class="proyecto">
+            <div class="proyecto-imagen"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+            <div class="proyecto-cuerpo">
+              <span class="estado">En construcción</span>
+              <h3>ProyectoMilaCrud</h3>
+              <p>Proyecto académico con los conocimientos de la carrera.</p>
+              <span class="proyecto-flecha" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="carrusel-puntos" id="puntos" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ====== Contacto ===== -->
+    <section class="seccion seccion-alterna" id="contacto">
+      <div class="contenedor">
+        <div class="seccion-cabecera centrada">
+          <p class="etiqueta">Contacto</p>
+          <h2 class="seccion-titulo">¿Tienes un proyecto en mente?</h2>
+          <p>Escríbeme por cualquiera de estos medios.</p>
+        </div>
+
+        <!-- reemplazar cada href="#" y el texto "Próximamente" con los datos reales -->
+        <ul class="contacto-grid">
+          <li>
+            <a class="contacto-item" href="mailto:mila.barrantes.dev@gmail.com">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span><strong>Correo</strong><small>mila.barrantes.dev@gmail.com</small></span>
+            </a>
+          </li>
+          <li>
+            <a class="contacto-item" href="https://wa.me/50688636090" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <span><strong>WhatsApp</strong><small>+506 8863 6090</small></span>
+            </a>
+          </li>
+          <li>
+            <a class="contacto-item" href="https://www.linkedin.com/in/mila-barrantes" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              <span><strong>LinkedIn</strong><small>in/mila-barrantes</small></span>
+            </a>
+          </li>
+          <li>
+            <a class="contacto-item" href="https://github.com/milabarrantesdev" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span><strong>GitHub</strong><small>milabarrantesdev</small></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <p>&copy; <span id="anio">2026</span> Camila Barrantes Ugalde</p>
+      <p class="pie-slogan">Ideas convertidas en código</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
